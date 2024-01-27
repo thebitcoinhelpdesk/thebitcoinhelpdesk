@@ -2733,7 +2733,6 @@ input, select, textarea {
 
 			#banner header .button {
 				vertical-align: middle;
-				margin-left: 1em;
 			}
 
 /* Wrapper */
@@ -2787,7 +2786,6 @@ input, select, textarea {
 
 		#cta header .button {
 			vertical-align: middle;
-			margin-left: 1em;
 		}
 
 /* Footer */
@@ -3011,10 +3009,6 @@ input, select, textarea {
 					display: block;
 				}
 
-				#banner header .button {
-					margin: 1em 0 0 0;
-				}
-
 		/* CTA */
 
 			#cta {
@@ -3023,10 +3017,6 @@ input, select, textarea {
 
 				#cta header h2 {
 					display: block;
-				}
-
-				#cta header .button {
-					margin: 1em 0 0 0;
 				}
 
 		/* Footer */
