@@ -2590,6 +2590,7 @@ input, select, textarea {
 
 		#nav > ul {
 			margin: 0;
+			padding-left: 0;
 		}
 
 			#nav > ul > li {
