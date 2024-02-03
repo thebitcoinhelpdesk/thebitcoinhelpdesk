@@ -2736,6 +2736,51 @@ input, select, textarea {
 				vertical-align: middle;
 			}
 
+/* Banner */
+
+	#banner2 {
+		background-image: url("../../images/banner.jpg");
+		background-position: center center;
+		background-size: cover;
+		height: 14em;
+		text-align: center;
+		position: relative;
+	}
+
+		#banner2 header {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: #212121;
+			background: rgba(27, 27, 27, 0.75);
+			color: #fff;
+			padding: 1.5em 0;
+		}
+
+			#banner2 header h2 {
+				display: inline-block;
+				margin: 0;
+				font-size: 1.25em;
+				vertical-align: middle;
+			}
+
+				#banner2 header h2 em {
+					opacity: 0.75;
+				}
+
+				#banner2 header h2 a {
+					border-bottom-color: rgba(255, 255, 255, 0.5);
+				}
+
+					#banner2 header h2 a:hover {
+						border-bottom-color: transparent;
+					}
+
+			#banner2 header .button {
+				vertical-align: middle;
+			}
+
 /* Wrapper */
 
 	.wrapper {
@@ -2849,6 +2894,12 @@ input, select, textarea {
 				height: 24em;
 			}
 
+		/* Banner */
+
+			#banner2 {
+				height: 12em;
+			}
+
 	}
 
 /* Normal */
@@ -2892,6 +2943,12 @@ input, select, textarea {
 
 			#banner {
 				height: 20em;
+			}
+
+		/* Banner */
+
+			#banner2 {
+				height: 10em;
 			}
 
 		/* Wrapper */
@@ -3007,6 +3064,16 @@ input, select, textarea {
 			}
 
 				#banner header h2 {
+					display: block;
+				}
+
+		/* Banner */
+
+			#banner2 {
+				height: 10em;
+			}
+
+				#banner2 header h2 {
 					display: block;
 				}
 
@@ -3287,6 +3354,12 @@ input, select, textarea {
 				height: 18em;
 			}
 
+		/* Banner */
+
+			#banner2 {
+				height: 9em;
+			}
+
 		/* Wrapper */
 
 			.wrapper {
@@ -3344,6 +3417,16 @@ input, select, textarea {
 			}
 
 				#banner header {
+					padding: 20px;
+				}
+
+		/* Banner */
+
+			#banner2 {
+				height: 10em;
+			}
+
+				#banner2 header {
 					padding: 20px;
 				}
 
