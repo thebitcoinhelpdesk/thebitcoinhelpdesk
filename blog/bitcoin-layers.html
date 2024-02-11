@@ -1,0 +1,193 @@
+
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bitcoin Layers - Blog - The Bitcoin Help Desk</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;">Schedule a Call</a></li>
+								<li class="current"><a href="/blog.html">Blog</a></li>
+								<li><a href="/about.html">About</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Banner -->
+				<section id="banner2">
+				</section>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-8 col-12-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2>Bitcoin Layers</h2>
+											</header>
+
+											<p>The Bitcoin ecosystem is built in layers. Layer 1 is the base layer Bitcoin network and provides security, decentralization, and final settlement. Layer 2 is a layer on top of the base layer and provides scalability in the form of more transactions per second and lower fees as well as additional functionality like confidential transactions and tokenized assets.</p>
+
+											<p>A common criticism of Bitcoin is that its limited throughput and block times are too slow for daily payments, too expensive for low value transactions, and not scalable enough to serve the world's population. While this is true if only considering Layer 1, these criticisms fall apart when considering Layer 2.</p>
+											
+											<p>Imagine if you had to make a wire transfer to buy coffee every day instead of using a credit card. The wire transfer can cost $30 to initiate, much more than the value of the coffee, and could take days to settle. Credit cards on the other hand serve as the payment processing layer and enable instant transactions of any size with low fees. Transacting on Bitcoin Layer 1 is the equivalent of making a wire transfer. Transacting on Bitcoin Layer 2 is the equivalent of using credit cards for daily purchases.</p>
+
+											<p>Once we understand the different roles that Layer 1 and Layer 2 serve, we can take advantage of the different layers for different needs.</p>
+
+											<table class="default">
+												<tr>
+													<th>Layer 1</th>
+													<th>Layer 2</th>
+												</tr>
+												<tr>
+													<td>Savings accounts</td>
+													<td>Checking accounts</td>
+												</tr>
+												<tr>
+													<td>High value transactions</td>
+													<td>Low value transactions</td>
+												</tr>
+												<tr>
+													<td>1 hour settlement</td>
+													<td>Instant settlement</td>
+												</tr>
+												<tr>
+													<td>Trustless</td>
+													<td>Trustless or trust minimized</td>
+												</tr>
+											</table>
+
+											<p>The two most prominent Bitcoin Layer 2 solutions are the Lightning and Liquid networks.</p>
+
+											<h3>Lightning Network</h3>
+
+											<p>The <a href="https://lightning.network/">Lightning Network</a> is a distributed network based on channels between users and merchants. When channels are opened, funds are locked on the Layer 1 network which can then be freely transacted with over the channels. Funds can flow in both directions over the channels as long as the channels are kept open. Only when channels are closed is when the final balances are committed back to the Layer 1 network.</p>
+
+											<p>Moving transactions to Lightning channels benefits users who can then transact instantly for low fees over those channels without having to interact with Layer 1 for every transaction. By moving activity to Layer 2, it also benefits users of Layer 1 who have less competition for transactions and thus lower fees and more predictable settlement times.</p>
+
+											<h3>Liquid Network</h3>
+
+											<p>The <a href="https://liquid.net/">Liquid Network</a> is a parallel network (sidechain) that is pegged to Bitcoin Layer 1. Funds are locked on the Layer 1 network to peg them into the sidechain, and an equivalent amount of funds are then available for use on the sidechain.</p>
+
+											<p>Once funds are pegged into the sidechain, users benefit from 2 minute final settlement instead of 1 hour final settlement, low fees, and additional functionality like confidential transactions and tokenized assets. Users can peg out and return funds back to the Layer 1 network at any point.</p>
+
+											<p>The operation of the network and the pegged in funds are controlled by members of the <a href="https://liquid.net/governance">Liquid Federation</a>, a geographically distributed group of Bitcoin companies motivated and incentivized to contribute to Bitcoin's success. The network uses multisignature wallets, whitelisted withdrawal addresses, and timelocks to ensure the security and auditability of the network and its locked funds so that no small number of entities can compromise the network on their own and there is ample time to respond and recover in the event that there is a compromise. Additionally, users of the network can run Liquid nodes as well to validate the activity on the network.</p>
+
+											<h3>Lightning vs. Liquid</h3>
+
+											<p>While both Lightning and Liquid are Layer 2 solutions, there are pros and cons with each solution.</p>
+
+
+											<table class="default">
+												<tr>
+													<th>Lightning</th>
+													<th>Liquid</th>
+												</tr>
+												<tr>
+													<td>Self-custodial and custodial options</td>
+													<td>Self-custodial but requires trust in Liquid Federation members</td>
+												</tr>
+												<tr>
+													<td>Channel and Liquidity Management</td>
+													<td>N/A</td>
+												</tr>
+												<tr>
+													<td>Instant settlement</td>
+													<td>2 minute settlement</td>
+												</tr>
+												<tr>
+													<td>Hot wallets with keys online</td>
+													<td>Hot wallets with keys online<br />Cold wallets with keys protected by hardware</td>
+												</tr>
+												<tr>
+													<td>Private transactions</td>
+													<td>Confidential transactions</td>
+												</tr>
+												<tr>
+													<td>N/A</td>
+													<td>Tokenized Assets</td>
+												</tr>
+											</table>
+
+											<p>Additionally, these networks can be complementary. For example, you could rebalance Lightning channels using the Liquid network to avoid Layer 1 fees.</p>
+											
+											<h3>Conclusion</h3>
+
+											<p>Bitcoin's layers work together to provide security, decentralization, and scalability.</p>
+											
+											<p>There are a variety of wallets and tools for interacting with all of Bitcoin's layers. Once you understand the capabilities and purpose of the different layers, you can take advantage of them for your own needs, avoid making costly mistakes, save on fees, and unlock additional utility.</p>
+
+											<p>If you'd like a trusted partner that can tailor guidance to your specific needs and guide you on your Bitcoin journey, <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;">schedule a call</a> with us.</p>
+										</article>
+
+								</div>
+							</div>
+							<div class="col-4 col-12-narrower">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- CTA -->
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;" class="button">Schedule a Call</a>
+						</header>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+			<script>
+				$('#sidebar').load('/blog/articles.html');
+				$('#footer').load('/footer.html');
+			</script>
+
+	</body>
+</html>
