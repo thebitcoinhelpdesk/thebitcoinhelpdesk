@@ -1,0 +1,172 @@
+
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bitcoin Wallets - Blog - The Bitcoin Help Desk</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;">Schedule a Call</a></li>
+								<li class="current"><a href="/blog.html">Blog</a></li>
+								<li><a href="/about.html">About</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Banner -->
+				<section id="banner2">
+				</section>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-8 col-12-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2>Bitcoin Wallets</h2>
+											</header>
+											
+											<p>Wallets are the primary user interface for sending, receiving, and securing Bitcoin. There are a variety of wallets available for different platforms each with their own use cases and tradeoffs.</p>
+
+											<h3>Hot vs. Cold Wallets</h3>
+
+											<p>Hot wallets are internet-connected wallets where the private key that secures the wallet is stored on the device. While hot wallets provide the most convenient user experience for sending and receiving Bitcoin from anywhere, they are the least secure, since internet-connected devices can be compromised in a number of ways, and anyone that is able to compromise your private key can sweep your funds for themselves.</p>
+
+											<p>Cold wallets on the other hand are hardened offline devices that secure private keys separate from any internet-connected device. This protects the keys from most attack vectors, but isn't as convenient as a hot wallet due to the need to access the hardware device, unlock it, and interface with the wallet. Some examples of cold wallets include:</p>
+
+											<ul>
+												<li>Bitbox02</li>
+												<li>Blockstream Jade</li>
+												<li>Coldcard</li>
+												<li>SeedSigner</li>
+												<li>Trezor</li>
+											</ul>
+
+											<p>Cold wallets are best for safeguarding long-term savings, while hot wallets are best for daily spending. Generally, you shouldn't keep more Bitcoin in a hot wallet than you would carry around as cash in your pocket.</p>
+
+											<h3>Mobile vs. Desktop Wallets</h3>
+
+											<p>Mobile wallets for Android and iOS are best suited for daily spending wallets but can be used for long-term savings as well. Many mobile wallets can be paired with cold wallets so that the private keys are secured offline. Some examples of mobile wallets include:</p>
+
+											<ul>
+												<li>Aqua</li>
+												<li>Blockstream Green</li>
+												<li>Blue Wallet</li>
+												<li>Breez</li>
+												<li>Phoenix</li>
+												<li>Samourai</li>
+												<li>Strike</li>
+												<li>Wallet of Satoshi</li>
+											</ul>
+											
+											<p>Mobile wallets may need to connect to Electrum servers to fetch transaction history and balances, so by default these mobile wallets can reveal financial information to any number of public Electrum servers. More advanced mobile wallets do allow users that <a href="/blog/bitcoin-nodes.html">run their own nodes</a> to connect their mobile wallet to their own node to improve security and privacy, but not all mobile wallets support this.</p>
+											
+											<p>Desktop wallets for Windows, Mac, and Linux tend to be more full-featured than mobile wallets and are best suited for long-term savings that doesn't need to be always available in your pocket. Some examples of desktop wallets include:</p>
+
+											<ul>
+												<li>Electrum</li>
+												<li>Blockstream Green</li>
+												<li>Sparrow</li>
+												<li>Specter</li>
+											</ul>
+
+											<p>Users that <a href="/blog/bitcoin-nodes.html">run their own nodes</a> on the same computer as the desktop wallet can easily configure their desktop wallets to use their own node. Sparrow, in particular, can easily connect to a local running instance of Bitcoin Core. It can also connect to an Electrum server similar to mobile wallets.</p>
+
+											<h3>Layer 1 vs. Layer 2 Wallets</h3>
+
+											<p>The Bitcoin ecosystem is built in <a href="/blog/bitcoin-layers.html">layers</a>, and different wallets provide different levels of support for those layers.</p>
+
+											<p>Layer 2 wallets like Aqua or Phoenix are best for spending wallets. Long-term savings is best stored in a cold wallet on Layer 1.</p>
+
+											<h3>Custodial vs. Self-Custodial Wallets</h3>
+
+											<p>Custodial wallets are wallets where you don't control the keys to your Bitcoin. In other words, your Bitcoin is held in custody by the wallet provider and is subject to counterparty risk. Lightning wallets that optimize for usability can often be custodial due to the sometimes complicated and costly nature of self-custodial Lightning wallets. Wallet of Satoshi is a prime example of a custodial Lightning wallet.</p>
+
+											<p>Self-custodial wallets are wallets where you control the keys to your Bitcoin and are generally recommended over custodial wallets to fulfill Bitcoin's core promise of financial self-sovereignty.</p>
+
+											<h3>Singlesig vs. Multisig Wallets</h3>
+
+											<p>Bitcoin transactions can only be authorized by owners of private keys. The owners of the keys sign the transactions with the keys before broadcasting the transactions to the network.</p>
+
+											<p>Single-signature (singlesig) wallets are wallets that only require the signature of a single private key. Singlesig wallets have a single point of failure by design so don't have as much fault tolerance built in. If your single private key is lost or stolen, then your funds are lost.</p>
+
+											<p>Multi-signature (multisig) wallets are wallets that require multiple keys to sign a transaction. Multisig wallets are often described as m-of-n wallets where m signatures are required out of n possible candidates. A common example of this is a 2-of-3 wallet where the wallet is configured with 3 private keys, and any 2 of them must sign transactions before they can be broadcast. Multisig wallets can provide additional security and fault tolerance but can be complicated to set up and manage. When the keys are distributed among different entities, those entities must work together to approve any transactions. For example, a 2-of-3 multisig wallet between a child and his parents would require either the child and one parent to sign a transaction or both parents to sign a transaction for the transaction to be broadcast.</p>
+
+											<h3>Conclusion</h3>
+
+											<p>There are many Bitcoin wallets for different needs. It's common for Bitcoiners to start with simpler solutions and then evolve their wallet configurations as their savings and knowledge grow.</p>
+
+											<p>If you'd like a trusted partner that can tailor guidance to your specific needs and guide you on your Bitcoin journey, <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;">schedule a call</a> with us.</p>
+										</article>
+
+								</div>
+							</div>
+							<div class="col-4 col-12-narrower">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- CTA -->
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;" class="button">Schedule a Call</a>
+						</header>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+			<script>
+				$('#sidebar').load('/blog/articles.html');
+				$('#footer').load('/footer.html');
+			</script>
+
+	</body>
+</html>
