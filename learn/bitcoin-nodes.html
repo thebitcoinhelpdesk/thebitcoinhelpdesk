@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	Arcana by HTML5 UP
@@ -6,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Blog - The Bitcoin Help Desk</title>
+		<title>Bitcoin Nodes - Learn - The Bitcoin Help Desk</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,7 +29,7 @@
 							<ul>
 								<li><a href="/">Home</a></li>
 								<li><a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;">Schedule a Call</a></li>
-								<li class="current"><a href="/blog.html">Blog</a></li>
+								<li class="current"><a href="/learn.html">Learn</a></li>
 								<li><a href="/about.html">About</a></li>
 							</ul>
 						</nav>
@@ -50,29 +51,16 @@
 
 										<article>
 											<header>
-												<h2>Blog</h2>
+												<h2>Bitcoin Nodes</h2>
 											</header>
-
-											<p>Browse through free educational material to deepen your understanding of Bitcoin.</p>
-
-											<p><a href="/blog/bitcoin-101.html">Bitcoin 101</a> links to resources to understand the baseline principles of what is sound
-											money and why Bitcoin is the soundest money ever invented.</p>
-
-											<p><a href="/blog/bitcoin-etfs.html">Bitcoin ETFs</a> compares buying Bitcoin ETFs vs. buying Bitcoin directly.</p>
-
-											<p><a href="/blog/bitcoin-exchanges.html">Bitcoin Exchanges</a> details a process for finding a reputable Bitcoin exchange in your country.</p>
-
-											<p><a href="/blog/bitcoin-inheritance.html">Bitcoin Inheritance</a> discusses key considerations for inheritance planning as well as various companies that offer inheritance planning as a service.</p>
-
-											<p><a href="/blog/bitcoin-layers.html">Bitcoin Layers</a> explores the differences between Bitcoin Layer 1 and Layer 2.</p>
-
-											<p><a href="/blog/bitcoin-misconceptions.html">Bitcoin Misconceptions</a> debunks common Bitcoin misconceptions.</p>
 											
-											<p><a href="/blog/bitcoin-nodes.html">Bitcoin Nodes</a> defines the role that nodes play in the Bitcoin network as well as options for running your own node to maximize security and privacy.</p>
-
-											<p><a href="/blog/bitcoin-scams.html">Bitcoin Scams</a> prepares you to defend against common Bitcoin scams.</p>
+											<p>Nodes are computers on the Bitcoin network that run the Bitcoin software, relay transactions, and verify that all transactions follow Bitcoin's consensus rules. Nodes are designed to be lightweight so that anyone on the network can run a node, and in fact, users are incentivized to run their own nodes to maximize the network's decentralization and their own security and privacy.</p>
 											
-											<p><a href="/blog/bitcoin-wallets.html">Bitcoin Wallets</a> provides an overview of various Bitcoin wallets and their use cases.</p>
+											<p>A node could be as simple as a computer running <a href="https://bitcoincore.org/en/download/">Bitcoin Core</a> or could be a dedicated hardware device from companies like <a href="https://start9.com/">Start9</a> or <a href="https://umbrel.com/">Umbrel</a> running additional services like Electrum and Lightning. Once up and running, nodes listen for transactions on the network, verify that all transactions follow Bitcoin's consensus rules, and relay critical data like mined blocks and chain state to other nodes on the network. Unlike centralized networks and services where all clients connect to centralized servers, nodes operate in a peer-to-peer (P2P) fashion such that the network is resilient to censorship and nodes going offline.</p>
+
+											<p>Bitcoin wallets talk to nodes to load transaction history and available balances. If you don't run your own node and connect your wallet to it, your wallet will connect to any number of publicly available nodes for this information. If the node your wallet connects to has malicious intent, it could log and track your wallet addresses and balances and potentially connect it to your location via your IP address, potentially making you a target. By connecting your wallet to your own node, you can keep your transaction history and balances private. Additionally, a malicious node could disobey the Bitcoin consensus rules and lie to you about the validity of transactions in your wallet, making your wallet think you have more Bitcoin than you really do or that the recent high value payment someone sent you was confirmed when it really wasn't. Running your own trusted node to verify your Bitcoin holdings is like having your own personal goldsmith to verify the validity of your gold.</p>
+
+											<p>For beginners or those with low amounts of Bitcoin holdings, the risks of potentially connecting to a malicious node aren't enough to justify the added complexity of running your own node. However, as your Bitcoin holdings increase, your value of security and privacy rises, or as your desire to use Bitcoin's more advanced functionality grows, running your own node becomes essential.</p>
 
 											<p>If you'd like a trusted partner that can tailor guidance to your specific needs and guide you on your Bitcoin journey, <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;">schedule a call</a> with us.</p>
 										</article>
@@ -114,7 +102,7 @@
 			<script src="/assets/js/main.js"></script>
 
 			<script>
-				$('#sidebar').load('/blog/articles.html');
+				$('#sidebar').load('/learn/articles.html');
 				$('#footer').load('/footer.html');
 			</script>
 
