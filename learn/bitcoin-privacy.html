@@ -1,0 +1,148 @@
+
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bitcoin Privacy - Learn - The Bitcoin Help Desk</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;">Schedule a Call</a></li>
+								<li class="current"><a href="/learn/">Learn</a></li>
+								<li><a href="/about.html">About</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Banner -->
+				<section id="banner2">
+				</section>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-8 col-12-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2>Bitcoin Privacy</h2>
+											</header>
+
+											<h3>Buying Bitcoin</h3>
+
+											<p>Preserving privacy begins with how you <a href="/learn/bitcoin-exchanges.html">buy Bitcoin</a>. Using a Know Your Customer (KYC)  exchange that requires you to provide personally identifiable information will connect your Bitcoin addresses with your identity. If that association is ever leaked from a hack or other act of negligence, at the very least it will indicate how much Bitcoin you have purchased potentially making you a target for bad actors, and at the very worst it could associate all future transactions out of your wallet with your identity unless additional privacy preserving actions are taken.</p>
+
+											<h3>Address Reuse</h3>
+
+											<p>Bitcoin addresses were designed to be single-use. Reusing addresses across transactions links transactions together allowing blockchain analysis to reveal the full balance at that address and draw connections back from future transactions. Using separate addresses per transaction also introduces plausible deniability that the addresses don't belong to the same wallet. Fortunately, any credible <a href="/learn/bitcoin-wallets.html">wallet</a> today will generate new receive addresses whenever you make a request to receive Bitcoin.</p>
+
+											<h3>Accounts and XPubs</h3>
+											
+											<p>Bitcoin wallets allow you to create separate accounts to segregate balances and addresses for different purposes. Each account has an Extended Public Key (XPub) which can be used to derive all the addresses for the account. Exchanges will often provide the option to input an XPub so that future withdrawals will be made to new addresses. While this is a convenient way to avoid address reuse without needing to manaully enter new addresses for every transaction, providing an XPub means the exchange can derive future addresses as well even after you're done using the exchange. If the XPub is ever leaked, then anyone with access to the XPub can also see your balances and monitor transactions on the blockchain. Whenever considering sharing an XPub, consider the privacy implications of doing so and consider creating a separate account per service to minimize the scope of shared information.</p>
+
+											<h3>UTXO Management</h3>
+
+											<p>Unspent Transaction Outputs (UTXOs) are the individual denominations of Bitcoin received during a transaction to a particular address. If you withdraw 1.5 Bitcoin from an exchange to a single address, your wallet will contain a 1.5 Bitcoin UTXO for that address. If a friend sends you a gift of 0.25 Bitcoin privately to another address, your wallet will now also contain a 0.25 Bitcoin UTXO at the second address.</p>
+											
+											<p>When sending Bitcoin, UTXOs serve as the inputs to the transaction. The receiver will see the value of the UTXOs, so if larger UTXOs are spent, that can reveal information about your savings. Imagine paying for coffee with a hundred dollar bill. The barista will need to return change for the hundred dollar bill, and you just revealed to anyone nearby that you are carrying a hundred dollars. Spending with large UTXOs can reveal similar information on the blockchain. For a 0.24 Bitcoin transaction, it's better to use the 0.25 Bitcoin UTXO than the 1.5 Bitcoin UTXO. Not only is the value of the UTXO leaked, but any change will be sent to a new UTXO in your wallet, and the receiver will be able to track future transactions with those funds unless additional privacy protecting measures are taken.</p>
+
+											<p>When multiple UTXOs are combined to deliver a larger amount, those UTXOs are connected on the blockchain by a heuristic known as the common input ownership heuristic. Since whoever sent the transaction needed the keys to sign for the UTXOs, it can be assumed that they owned both. If one UTXO was acquired on a KYC exchange and another was acquired privately without KYC, combining them in a single transaction will link the private Bitcoin to the identity used with the KYC exchange. Bitcoin wallets provide the ability to label UTXOs and keep track of who knows about them. When constructing transactions, it's best not to combine UTXOs from different sources if it can be avoided. Many Bitcoin wallets will warn when combining UTXOs from different sources.</p>
+
+											<p>UTXOs are also an important factor in calculating transaction fees. Since fees are calculated by the size of the transaction data and not by the monetary value of the transaction, each additional UTXO used in a transaction adds to the fees. If you have accumulated a large amount of small UTXOs, you may need to frequently combine UTXOs when making transactions for higher amounts. A common practice to reduce future transaction fees is called UTXO consolidation. During low fee environments, sending multiple small UTXOs together in a single transaction to another address in your wallet will consolidate them into a single UTXO. While this will save on fees during high fee environments, the act of UTXO consolidation triggers the common input ownership heuristic and links ownership together on the blockchain. When considering UTXO consolidation, be mindful of which UTXOs you merge together to avoid compromising privacy.</p>
+
+											<h3>CoinJoin</h3>
+
+											<p>CoinJoin is the protocol for mixing UTXOs with other parties to break the link between past activity and future activity. Wallets like <a href="https://sparrowwallet.com/docs/mixing-whirlpool.html">Sparrow</a> and <a href="https://samouraiwallet.com/whirlpool">Samourai</a> provide tools to perform CoinJoins and preserve privacy.</p>
+
+											<h3>Layer 2</h3>
+
+											<p><a href="/learn/bitcoin-layers.html">Layer 2</a> networks like Lightning and Liquid move transaction activity into channels and sidechains that minimize the digital footprint on the Bitcoin Layer 1 chain. The Liquid network even supports Confidential Transactions (CTs) where the type and amount of assets being traded is blinded to everyone but the sender and receiver unless they selectively reveal that information. Consider using Layer 2 networks to reduce fees and preserve privacy at the same time.</p>
+
+											<h3>Bitcoin Nodes</h3>
+
+											<p>Running your own <a href="/learn/bitcoin-nodes.html">node</a> or at least connecting to servers that you trust can prevent your wallets from leaking information to untrusted parties.</p>
+
+											<h3>Network Privacy</h3>
+
+											<p>Whenever connecting to a Bitcoin server or blockchain explorer, it's best to connect over Tor. Tor routes network connections through multiple network nodes to prevent the IP address and location of the source and destination from being revealed. Connecting directly from your IP address to any server will link your IP address with the Bitcoin addresses, balances, and transactions that you query. Preserve privacy by connecting over Tor when possible or via a VPN.</p>
+
+											<h3>Taproot Addresses</h3>
+
+											<p>Taproot is the latest Bitcoin address-type which enables multiple spending conditions and also improves privacy by hiding spending conditions on the blockchain and making singlesig and multisig wallets indistinguishable. While Taproot addresses have not yet been widely adopted, they will offer additional privacy once more wallets and services support them.</p>
+											
+											<h3>Conclusion</h3>
+
+											<p>There are many factors to consider when trying to preserve privacy with Bitcoin.</p>
+
+											<p>If you'd like a trusted partner that can tailor guidance to your specific needs and guide you on your Bitcoin journey, <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;">schedule a call</a> with us.</p>
+										</article>
+
+								</div>
+							</div>
+							<div class="col-4 col-12-narrower">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- CTA -->
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thebitcoinhelpdesk/consultation?primary_color=f89825'});return false;" class="button">Schedule a Call</a>
+						</header>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+			<script>
+				$('#sidebar').load('/learn/articles.html');
+				$('#footer').load('/footer.html');
+			</script>
+
+	</body>
+</html>
