@@ -76,10 +76,6 @@
 
 											<p>UTXOs are also an important factor in calculating transaction fees. Since fees are calculated by the size of the transaction data and not by the monetary value of the transaction, each additional UTXO used in a transaction adds to the fees. If you have accumulated a large amount of small UTXOs, you may need to frequently combine UTXOs when making transactions for higher amounts. A common practice to reduce future transaction fees is called UTXO consolidation. During low fee environments, sending multiple small UTXOs together in a single transaction to another address in your wallet will consolidate them into a single UTXO. While this will save on fees during high fee environments, the act of UTXO consolidation triggers the common input ownership heuristic and links ownership together on the blockchain. When considering UTXO consolidation, be mindful of which UTXOs you merge together to avoid compromising privacy.</p>
 
-											<h3>CoinJoin</h3>
-
-											<p>CoinJoin is the protocol for mixing UTXOs with other parties to break the link between past activity and future activity. Wallets like <a href="https://sparrowwallet.com/docs/mixing-whirlpool.html">Sparrow</a> and <a href="https://samouraiwallet.com/whirlpool">Samourai</a> provide tools to perform CoinJoins and preserve privacy.</p>
-
 											<h3>Layer 2</h3>
 
 											<p><a href="/learn/bitcoin-layers.html">Layer 2</a> networks like Lightning and Liquid move transaction activity into channels and sidechains that minimize the digital footprint on the Bitcoin Layer 1 chain. The Liquid network even supports Confidential Transactions (CTs) where the type and amount of assets being traded is blinded to everyone but the sender and receiver unless they selectively reveal that information. Consider using Layer 2 networks to reduce fees and preserve privacy at the same time.</p>
